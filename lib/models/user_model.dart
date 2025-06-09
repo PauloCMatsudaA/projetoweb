@@ -5,7 +5,7 @@ class UserModel {
   final String city;
   final List<String> skillsOffered;
   final List<String> skillsWanted;
-//
+
   UserModel({
     required this.uid,
     required this.name,
