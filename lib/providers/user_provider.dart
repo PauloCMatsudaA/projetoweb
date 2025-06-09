@@ -13,7 +13,6 @@ class UserProvider extends ChangeNotifier {
 
   bool get isLoggedIn => _user != null;
 
-  // Método para carregar o usuário logado
   Future<void> loadUser() async {
     final currentUser = _auth.currentUser;
     if (currentUser != null) {
@@ -25,14 +24,12 @@ class UserProvider extends ChangeNotifier {
     }
   }
 
-  // Método para cadastrar novo usuário no Firestore
   Future<void> registerUser(UserModel newUser) async {
     await _firestore.collection('users').doc(newUser.uid).set(newUser.toMap());
     _user = newUser;
     notifyListeners();
   }
 
-  // Método para logout
   Future<void> logout() async {
     await _auth.signOut();
     _user = null;
