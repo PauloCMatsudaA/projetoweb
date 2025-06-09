@@ -15,7 +15,6 @@ class UserModel {
     required this.skillsWanted,
   });
 
-  // Construtor para criar a partir de um documento do Firestore
   factory UserModel.fromMap(Map<String, dynamic> map, String uid) {
     return UserModel(
       uid: uid,
@@ -27,7 +26,6 @@ class UserModel {
     );
   }
 
-  // Converter para mapa para salvar no Firestore
   Map<String, dynamic> toMap() {
     return {
       'name': name,
