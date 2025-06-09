@@ -44,7 +44,7 @@ class ChatListScreen extends StatelessWidget {
                     .snapshots(),
                 builder: (context, messageSnapshot) {
                   if (!messageSnapshot.hasData || messageSnapshot.data!.docs.isEmpty) {
-                    return const SizedBox(); // Não mostra se não houve conversa ainda
+                    return const SizedBox();
                   }
 
                   final lastMessage = messageSnapshot.data!.docs.first.data() as Map<String, dynamic>;
