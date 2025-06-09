@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "852225593146",
+    "project_id": "projetoweb-54bbf",
+    "storage_bucket": "projetoweb-54bbf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852225593146:android:917b79c915016e9cb74a03",
+        "android_client_info": {
+          "package_name": "com.example.servicoamigo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUcFW8pv_n5d-C5Sqfy75r2g_3aHqiGms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
